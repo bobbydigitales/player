@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <title>Player</title>
+
+    <style>
+        button {
+            width: 50px;
+            height: 50px;
+        }
+        
+        html,
+        body {
+            background-color: rgb(30, 30, 30);
+            height: 100%
+        }
+        
+        #console {
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: limegreen
+        }
+        
+        #playlistInput {
+            width: 100%
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <iframe style="background-color: rgb(128, 128, 128);" src="/music/"></iframe> Playlist: <input type=text id="playlistInput">
+    <button id="playlistGoButton" onclick="onPlaylistGoButtonClicked()">Go</button>
+    <br>
+    <audio style="width:100%" id="playerAudio"></audio>
+    <br>
+    <button id="playlistPrevious" onclick="onPlaylistPreviousButtonClicked()"><</button>
+    <button id="playlistNext" onclick="onPlaylistNextButtonClicked()">></button>
+
+    <div id="console"></div>
+    <script src="build/main.js"></script>
+</body>
+
+</html>
