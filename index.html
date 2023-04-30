@@ -32,13 +32,13 @@
 
 <body>
 
-    <iframe style="background-color: rgb(128, 128, 128);" src="/music/"></iframe> Playlist: <input type=text id="playlistInput">
-    <button id="playlistGoButton" onclick="onPlaylistGoButtonClicked()">Go</button>
+    <iframe style="background-color: rgb(128, 128, 128); width:100%" src="/music/"></iframe> Playlist: <input type=text id="playlistInput">
+    <button id="playlistGoButton">Go</button>
     <br>
     <audio style="width:100%" id="playerAudio"></audio>
     <br>
-    <button id="playlistPrevious" onclick="onPlaylistPreviousButtonClicked()"><</button>
-    <button id="playlistNext" onclick="onPlaylistNextButtonClicked()">></button>
+    <button id="playlistPrevious"><</button>
+    <button id="playlistNext">></button>
 
     <div id="console"></div>
     <script src="build/main.js"></script>
